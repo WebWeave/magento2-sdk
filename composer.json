@@ -1,0 +1,19 @@
+{
+    "name": "webweave/magento2-sdk",
+    "description": "A proper Magento 2 rest api sdk",
+    "keywords": ["rest api", "Magento2", "sdk", "api"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sander de Jonge",
+            "email": "s.de.jonge@x-interactive.nl"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+       "psr-4": {"": "src"}
+    }
+}
