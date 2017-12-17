@@ -16,4 +16,5 @@ class ApiClient extends AbstractApiClient
 
 		return $token;
 	}
+
 }

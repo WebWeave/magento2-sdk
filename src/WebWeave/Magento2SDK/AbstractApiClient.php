@@ -14,7 +14,7 @@ abstract class AbstractApiClient
 	/**
 	 * @var $apiClient
 	 */
-	protected $apiClient;
+	public $apiClient;
 
 	/**
 	 * @var $userName
@@ -29,7 +29,7 @@ abstract class AbstractApiClient
 	/**
 	 * @var $token
 	 */
-	protected $token;
+	public $token;
 
 	/**
 	 * AbstractBridgeClient constructor.
@@ -61,6 +61,9 @@ abstract class AbstractApiClient
 			)]);
 
 			$this->token = str_replace('"', "", $req->getBody()->getContents());
+
+			$this->apiClient = new Client(['base_uri' => $this->API_URL,
+				'headers' => [ 'Content-Type' => 'application/json', 'Authorization' => 'Bearer '. $this->token ]]);
 
 			return $this->token;
 
