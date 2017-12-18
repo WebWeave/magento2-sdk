@@ -7,6 +7,11 @@ WARNING
 
 This piece of software is provided without warranty of any kind, use it at your own risk.
 
+DONE FOR NOW
+===============
+- [x] Customer groups
+- [x] Customers
+
 REQUIREMENTS
 ===============
 
